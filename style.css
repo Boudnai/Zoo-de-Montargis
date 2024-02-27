@@ -1,0 +1,224 @@
+        /* Styles pour le header */
+        header {
+            background-color: #4CAF50; /* Couleur de fond */
+            padding: 20px; /* Espacement intérieur */
+            text-align: center; /* Centrage du contenu */
+        }
+        .logo {
+            display: inline-block; /* Affichage en ligne pour le logo */
+            vertical-align: middle; /* Alignement vertical au centre */
+        }
+        .titre {
+            display: inline-block; /* Affichage en ligne pour le titre */
+            vertical-align: middle; /* Alignement vertical au centre */
+            margin-left: 20px; /* Marge à gauche pour l'espace entre le logo et le titre */
+            color: black; /* Couleur du texte */
+            font-size: 24px; /* Taille de la police */
+			font: 16pt georgia; /* Police et taille de texte */
+			font-weight: bold;
+        }
+        /* Styles pour la barre de navigation */
+        nav {
+            background-color: #333; /* Couleur de fond */
+            overflow: hidden; /* Empêcher le débordement du contenu */
+            text-align: center; /* Centrage des éléments */
+            font-family: Arial, sans-serif; /* Police */
+            font-size: 18px; /* Taille de la police */
+            display: flex; /* Utilisation de Flexbox */
+        }
+        nav ul {
+            flex-grow: 1;
+            list-style-type: none; /* Supprimer les puces */
+            margin: 0; /* Supprimer les marges */
+            padding: 0; /* Supprimer les rembourrages */
+            overflow: hidden; /* Empêcher le débordement du contenu */
+            display: flex; /* Utilisation de Flexbox */
+            flex: 1; /* Les éléments s'étendent pour occuper tout l'espace disponible */
+            justify-content: space-between; /* Espacement égal entre les éléments */
+        }
+        nav li {
+            flex-grow: 1;
+            display: inline-block; /* Affichage en ligne pour les éléments de la barre de navigation */
+        }
+        nav a {
+            display: block; /* Affichage en bloc */
+            color: white; /* Couleur du texte */
+            text-align: center; /* Centrage du texte */
+            padding: 20px 30px; /* Espacement interne */
+            text-decoration: none; /* Pas de soulignement pour les liens */
+        }
+        nav a:hover {
+            background-color: #ddd; /* Couleur de fond au survol */
+            color: black; /* Couleur du texte au survol */
+        }
+        /* Styles pour les sous-catégories */
+        nav ul ul {
+            display: none; /* Masquer les sous-listes par défaut */
+            position: absolute; /* Position absolue pour les afficher correctement */
+            background-color: #333; /* Couleur de fond */
+            z-index: 1000; /* Pour s'assurer que les sous-listes s'affichent au-dessus du contenu */
+            width: auto; /* Réinitialiser la largeur */
+        }
+        nav li:hover > ul {   
+            display: flex; /* Afficher la sous-liste au survol du lien parent */
+            flex-direction: column; /* Aligner les éléments en colonne */
+            width: 32.6%; /* Utiliser toute la largeur de l'élément parent */
+        }
+        nav ul li:hover > ul {
+            display: block; /* Afficher la sous-liste au survol du lien parent */
+            flex-direction: column; /* Aligner les éléments verticalement */
+        }
+        nav ul ul li {    display: block; /* Affichage en bloc pour chaque élément de la sous-liste */
+            width: 100%; /* Prendre toute la largeur disponible */
+        }
+        nav ul ul a {
+            padding: 10px; /* Espacement interne pour les sous-catégories */
+            display: block; /* Affichage en bloc pour les liens des sous-catégories */
+            color: white; /* Couleur du texte */
+            text-decoration: none; /* Pas de soulignement pour les liens */
+            text-align: center; /* Centrage du texte */
+        }
+        .footer1 {
+            background-color: #333; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            text-align: center; /* Centrage du contenu */
+            padding: 20px 0; /* Espacement intérieur */
+            position: fixed;
+            left: 0; /* Alignement à gauche */
+            bottom: 0; /* Alignement en bas */
+            width: 100%; /* Occuper toute la largeur */
+        }
+		footer {
+            background-color: #333; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            text-align: center; /* Centrage du contenu */
+            padding: 20px 0; /* Espacement intérieur */
+            
+            left: 0; /* Alignement à gauche */
+            bottom: 0; /* Alignement en bas */
+            width: 100%; /* Occuper toute la largeur */
+        }
+
+
+/*.logo {
+	float:left;
+	margin-right: 10px;
+}
+
+.titre {
+	float: left;
+	width: 65%;
+	margin-top: 88.5px;
+	margin-bottom: 88.5px;
+	text-align: center;
+}
+*/
+.intro {
+    position: absolute; /* Position absolue pour placer l'élément par rapport au parent */
+    top: 50%; /* Aligner le haut de l'élément au milieu de la page */
+    left: 50%; /* Aligner la gauche de l'élément au milieu de la page */
+    transform: translate(-50%, -50%); /* Déplacer l'élément de moitié de sa propre taille vers le haut et vers la gauche */
+    text-align: center; /* Centrer le texte */
+    font: 16pt georgia; /* Police et taille de texte */
+    margin-top: 10px; /* Marge supérieure */
+}
+
+.intro2{
+    text-align: center;
+	font: 16pt georgia; /* Police et taille de texte */
+    margin-top: 100px; /* Marge supérieure */
+    font-size: 20px;
+    margin-bottom: 20px; /* Ajoute une marge en bas pour séparer de la fiche technique */
+}
+
+.fiche-technique {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 150px; /* Augmentez la marge supérieure pour espacer la fiche technique de l'introduction */
+    border-radius: 5px;
+	font: 10pt georgia; /* Police et taille de texte */
+	margin-bottom: 100px;
+}
+
+.fiche-technique h2 {
+    font-size: 20px;
+    color: #333;
+	text-align: center;
+}
+
+.fiche-technique ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fiche-technique ul li {
+    margin-bottom: 10px;
+}
+
+.fiche-technique ul li strong {
+    font-weight: bold;
+}
+
+.image {
+    width: 300px; /* Taille de l'image */
+    margin-bottom: 20px; /* Marge en bas pour séparer du texte */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+
+.main-container {
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+.message {
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    flex-grow: 1; /* Fait en sorte que le message prenne tout l'espace restant */
+	font-family: Georgia, serif; /* Utilise la police Georgia */
+}
+
+
+.formulaireintro{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.formulaireplace {
+	float : middle;
+	width : 100%;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.formulairemoitie {
+	float : left;
+	width : 50%;
+}
+
+.formulaireboutons {
+	float: left;
+	width : 100%;
+	text-align: center;
+}
+
+.fieldset1 {
+	background: #ece6e6;
+
+}
+
+.fieldset2 {
+	background: #d8d7d7;
+}
+
+legend {
+	background: rgb(161, 194, 179);
+	font-weight : bold;
+	border-radius:10px;
+}
